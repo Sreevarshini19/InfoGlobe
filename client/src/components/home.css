@@ -1,0 +1,122 @@
+* {
+    font-family: Georgia, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: -30px;
+    /* margin-right: -20px; */
+    justify-content: space-around;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    background-color: white;
+    padding: 30px;
+}
+
+.topic {
+    width: 500px;
+    height: 300px;
+    margin-top: 40px;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color:#e7eefc;
+    box-shadow: 2px 3px 5px #0d15a5;
+    padding: 14px;
+}
+
+.topic:hover {
+    background-color: #a9c7f5;
+}
+a{
+    text-decoration: none;
+}
+.topic a span {
+    position: relative;
+    text-decoration: none;
+    font-size: 34px; 
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif, cursive; 
+    z-index: 2; /* Ensure text is above background */
+    color: black;
+    text-shadow: 2px 2px 4px white;
+}
+
+.topic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${im}); /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Apply blur effect to background */
+    z-index: 1; /* Ensure background is below the text */
+    opacity: 0.6; /* Adjust opacity to control background brightness */
+}
+
+.newspaper {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin-top: 30px;
+    border-radius: 7px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.newspaper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${im}); /* Set the background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(8px); 
+    z-index: 1; 
+    opacity: 0.1; 
+}
+
+.newspaper a {
+    position: relative;
+    z-index: 2; /* Ensure text is above the background */
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif, cursive;
+    text-shadow: 2px 2px 4px white;
+}

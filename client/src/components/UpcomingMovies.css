@@ -1,0 +1,24 @@
+/* client/src/components/UpcomingMovies.css */
+.movie-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.movie-item h1 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.movie-item p {
+    margin: 0;
+}

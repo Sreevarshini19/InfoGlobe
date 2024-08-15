@@ -1,0 +1,57 @@
+.results-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.results-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(33% - 40px); /* Adjusts the width to fit three items per row with margins */
+    background-image: url(../assets/newback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+}
+
+.results-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.results-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.results-description {
+    font-size: 1em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.results-source {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.results-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.results-link:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.2em;
+}

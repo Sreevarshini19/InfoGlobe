@@ -1,0 +1,69 @@
+body{
+    background-color: white;
+}
+.filter select {
+    padding:5px;
+    font-size: medium;
+}
+
+.every {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.eachevery {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(33% - 40px); /* Adjusts the width to fit three items per row with margins */
+    background-image: url(../assets/newback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: box-shadow 0.3s ease;
+}
+
+.eachevery:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+p {
+    margin: 0 0 10px;
+    color: #555;
+}
+
+strong {
+    color: #222;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .eachevery {
+        width: calc(50% - 40px); /* Adjusts to fit two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .eachevery {
+        width: calc(100% - 40px); /* Adjusts to fit one item per row on very small screens */
+    }
+}

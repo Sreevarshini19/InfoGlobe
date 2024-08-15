@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.input img {
+    width: 30px;
+    height: 30px;
+}
+.heading {
+    background-color: #0d15a5;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.out {
+    background-color: #e7eefc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 7 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.submitg, .submitb {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.submitg {
+    background-color: #fff;
+    color: black;
+    box-shadow:0px 5px 5px #0d15a5;
+}
+
+.submitb {
+    background-color: #0d15a5;
+    color: #fff;
+}
+.enter{
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #0d15a5;
+    color: white;
+ }
+.inputs {
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input img {
+    margin-right: 10px;
+}
+
+.input input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.forgotPassword {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgotPassword span {
+    color: #007bff;
+    cursor: pointer;
+}
+
+button.submitg {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.submitg:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.date {
+    font-size: 14px;
+    margin-top: 5px;
+}
